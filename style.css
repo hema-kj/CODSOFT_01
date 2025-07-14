@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.calculator {
+  width: 300px;
+  background: pink;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: palevioletred;
+}
+.display {
+  background:black;
+  color: white;
+  font-size: 2.5em;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background:black;
+}
+.btn {
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  background: orchid;
+  color:black;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background:plum;
+}
+.operator {
+  background:purple;
+}
+.operator:hover {
+  background:plum;
+}
+.equal {
+  grid-column: span 4;
+  background:pink;
+}
+.equal:hover {
+  background:plum;
+}
